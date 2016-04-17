@@ -13,6 +13,7 @@ public:
 	void Raise();
 	void Fold();
 	void WhatToDo();
+	void DetermineComb(Table table);
 	AIPlayer();
 	~AIPlayer();
 };

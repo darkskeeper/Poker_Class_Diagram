@@ -13,6 +13,7 @@ public:
 	void Raise();
 	void Fold();
 	void ShowHand() const;
+	void DetermineComb(Table table);
 	Player();
 	~Player();
 };

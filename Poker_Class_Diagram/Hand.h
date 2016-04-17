@@ -1,12 +1,11 @@
 #pragma once
-#include <iostream>
-#include <vector>
-using namespace std;
+#include "Table.h"
 
 class Hand
 {
 public:
 	vector <int> hand;
+	void Show() const;
 	Hand();
 	~Hand();
 };

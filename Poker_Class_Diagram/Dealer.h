@@ -17,7 +17,7 @@ public:
 	void RaiseBank(int amount);
 	void FirstDeal(vector <Player> players, AIPlayer AI, Table table);
 	void AddCardToTable(Table table);
-	void CheckWinner(vector <Player> players, AIPlayer AI);
+	void CheckWinner(vector <Player> players, AIPlayer AI, Table table);
 	Dealer();
 	~Dealer();
 };

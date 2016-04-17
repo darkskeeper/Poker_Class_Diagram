@@ -1,45 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="AIPlayer">
-    <Position X="3.5" Y="0.5" Width="1.5" />
+    <Position X="6.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQAEQAAAAIIAgAAAAAAAAAQEAAAAAAAAEAgEAAAA=</HashCode>
+      <HashCode>AAAAQAEQAAAAIIAgAAAAAAAAAQEACAAAAAAEAgEAAAA=</HashCode>
       <FileName>AIPlayer.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Dealer">
-    <Position X="2" Y="0.5" Width="1.5" />
+    <Position X="3.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACgACEQAAAAAAAACAAkAEAAAEAAAEAAAAABAAAAAAA=</HashCode>
       <FileName>Dealer.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Deck">
-    <Position X="6.5" Y="2.25" Width="1.5" />
+    <Position X="2" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAA=</HashCode>
       <FileName>Deck.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Hand">
-    <Position X="6.5" Y="0.5" Width="1.5" />
+    <Position X="8" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAEAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAEAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Hand.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Logger">
-    <Position X="9.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAwAAAAAAIAAAAAAAAAAAABAAEAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Logger.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Player">
     <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAQQAEQAAAAAIAgAAAAAAAAAAAAAAAAAAAEAwEAABA=</HashCode>
+      <HashCode>AAAQQAEQAAAAAIAgAAAAAAAAAAAACAAAAAAEAwEAABA=</HashCode>
       <FileName>Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logger">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAwAAAAAAIAAAAAAAAAAAABAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logger.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Room">
@@ -50,7 +50,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Table">
-    <Position X="8" Y="0.5" Width="1.5" />
+    <Position X="8" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAEBAAAgAAAAAAAAAA=</HashCode>
       <FileName>Table.h</FileName>

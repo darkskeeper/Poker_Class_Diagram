@@ -9,9 +9,9 @@ using namespace std;
 class Logger
 {
 public:
-	static string Parser(int Card) const;
-	static void WriteCardsToFile(char* FileName, vector <int> cards, char *Message) const;
-	static void WriteMessageToFile(char* FileName, char* Message) const;
+	static string Parser(int Card);
+	static void WriteCardsToFile(char* FileName, vector <int> cards, char *Message);
+	static void WriteMessageToFile(char* FileName, char* Message);
 	Logger();
 	~Logger();
 };
