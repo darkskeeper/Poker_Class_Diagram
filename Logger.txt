@@ -1,0 +1,92 @@
+#pragma once
+#include <fstream>
+#include <time.h>
+#include <ctime>
+#include <vector>
+#include <string>
+using namespace std;
+
+class Logger
+{
+
+private: 
+
+	static string Parser(int Card)
+	{
+		string ret = "";
+		
+		if (Card % 13 < 8)
+		{
+			ret += to_string((Card % 13)+2);
+		}
+		else
+		{
+			switch (Card % 13)
+			{
+			case TEN:
+				ret += "T";
+				break;
+			case JACKET:
+				ret += "J";
+				break;
+			case QUEEN:
+				ret += "Q";
+				break;
+			case KING:
+				ret += "K";
+				break;
+			case ACE:
+				ret += "A";
+				break;
+			}
+		}
+		switch (Card / 13)
+		{
+		case CLUBS:
+			ret += "_c";
+			break;
+		case SPADES:
+			ret += "_s";
+			break;
+		case DIAMONDS:
+			ret += "_d";
+			break;
+		case HEARTS:
+			ret += "_h";
+			break;
+		}
+		
+		return ret + " ";
+	}
+
+public:
+	static void WriteCardsSetToFile(char* FileName, vector<int> cards, char *Message)
+	{
+		char str[26];
+		string Outstr;
+		ofstream outFile;
+		time_t TimeNow = time(&TimeNow);
+
+		outFile.open(FileName, ios::app);
+		ctime_s(str, sizeof str, &TimeNow);
+		Outstr = Message;
+		for each (int ob in cards)
+		{
+			Outstr += Parser(ob);
+		}
+		outFile << str << " " << Outstr << endl;
+		outFile.close();
+	}
+
+	static void WriteToFile(char* FileName,	char* Message)
+	{
+		char str[26];
+		ofstream outFile;
+		time_t TimeNow = time(&TimeNow);
+	
+		outFile.open(FileName, ios::app);
+		ctime_s(str, sizeof str, &TimeNow);
+		outFile << str << "   " << Message << endl;
+		outFile.close();
+	}
+};
